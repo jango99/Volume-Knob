@@ -1,4 +1,3 @@
-# CircuitPython AnalogIn Demo
 import time
 import board
 import math
@@ -50,10 +49,10 @@ def change_volume(p_v, c_v):
 find_volume(get_volume(get_voltage(analog_in1)))
 past_volume = get_volume(get_voltage(analog_in1))
 while True:
-    '''
+    ''' 53-55 for testing purposes
     print(get_volume(get_voltage(analog_in1)),) # Prints out the voltage from pin 2 (volume knob)
     print("past volume: ", past_volume, "current volume: ", current_volume) #prints out the past_volume and current_volume
-    #print((120*get_voltage(analog_in2),))  # prints out the voltage from pin 3 (pause/unpause switch)
+    print((120*get_voltage(analog_in2),))  # prints out the voltage from pin 3 (pause/unpause switch)
     '''
     current_volume = get_volume(get_voltage(analog_in1))
     change_volume(past_volume, current_volume)
